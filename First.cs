@@ -1,21 +1,22 @@
-﻿using System;
+using System;
 
 class First
 {
     static void Main()
     {
        
-        Console.WriteLine("Обчислення відстані між населеними пунктами.");
-        Console.Write("Масштаб карти (кількість кілометрів в одному сантиметрі) -> ");
+        Console.WriteLine("Обчислення вiдстанi мiж населеними пунктами.");
+        Console.Write("Масштаб карти (кiлькiсть кiлометрiв в одному сантиметрi) -> ");
         double scale = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write("Відстань між точками, які позначають населені пункти (См) -> ");
+        Console.Write("Вiдстань мiж точками, якi позначають населенi пункти (См) -> ");
         double distanceInCm = Convert.ToDouble(Console.ReadLine());
 
        
         double distanceInKm = scale * distanceInCm;
 
       
-        Console.WriteLine($"Відстань між населеними пунктами {distanceInKm} км.");
+        Console.WriteLine($"Вiдстань мiж населеними пунктами {distanceInKm} км.");
     }
 }
+
