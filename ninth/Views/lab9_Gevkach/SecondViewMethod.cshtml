@@ -1,0 +1,19 @@
+﻿@model List<string>
+
+<h2>Відсортований список автомобілів (таблиця)</h2>
+
+<table class="table" style="width:20%">
+    <thread>
+        <tr>
+            <th class="text-center">Найменування</th>
+            </tr>
+        </thread>
+    <tbody>
+        @foreach (var autos in Model)
+            {
+            <tr class="text-center">
+                <td>@autos</td>
+                </tr>
+            }
+        </tbody>
+    </table>
